@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background03">
+
+<!--You may give a margin to the parent relativeLayout, but it will look like shit -->
+<!--    <TextView-->
+<!--        android:id="@+id/heading_title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:fontFamily="sans-serif-condensed-light"-->
+<!--        android:text="Cross Game"-->
+<!--        android:textColor="@color/cardview_light_background"-->
+<!--        />-->
+
+    <RelativeLayout
+        android:id="@+id/top_portion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="2dp"
+        android:paddingBottom="5dp">
+
+
+        <TextView
+            android:id="@+id/player1Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:text="Player 1 Score :"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:textFontWeight="@android:integer/config_longAnimTime"/>
+
+        <TextView
+            android:id="@+id/player2Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player1Score"
+            android:layout_marginLeft="30dp"
+            android:text="Player 2 Score :"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:textFontWeight="@android:integer/config_longAnimTime"/>
+
+        <TextView
+            android:id="@+id/player1_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/player1Score"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="normal"
+            android:textSize="21dp"
+            android:fontFamily="sans-serif-light"
+            android:textFontWeight="@android:integer/config_shortAnimTime"/>
+
+        <TextView
+            android:id="@+id/player2_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/player2Score"
+            android:layout_below="@id/player1_score"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="normal"
+            android:textSize="21dp"
+            android:fontFamily="sans-serif-light"
+            android:textFontWeight="@android:integer/config_shortAnimTime"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/parent_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_portion"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/child_linear_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="65dp">
+
+            <Button
+                android:id="@+id/btn_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+
+            <Button
+                android:id="@+id/btn_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+
+            <Button
+                android:id="@+id/btn_1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/child_linear_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btn_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+
+
+
+
+            <Button
+                android:id="@+id/btn_2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+
+            <Button
+                android:id="@+id/btn_2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/child_linear_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btn_3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+
+            <Button
+                android:id="@+id/btn_3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+
+            <Button
+                android:id="@+id/btn_3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:textSize="23dp"
+                android:text=""
+                android:textColor="#fff"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:onClick="check_condition"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/whose_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parent_linear_layout"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:layout_marginTop="45dp"/>
+
+    <Button
+        android:id="@+id/play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whose_turn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Have another go"
+        android:textColor="#7600bc"
+        android:backgroundTint="#e8bcf0"/>
+
+    <ImageButton
+        android:id="@+id/reset_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_again"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:padding="15dp"
+        android:background="@drawable/round_btn"
+        app:srcCompat="@android:drawable/stat_notify_sync" />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/about_me"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/play_again"-->
+<!--        android:layout_toRightOf="@id/reset_game"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginLeft="270dp"-->
+<!--        android:backgroundTint="#e8bcf0"-->
+<!--        android:clickable="true"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_info_details" />-->
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Roy"
+        android:layout_below="@+id/play_again"
+        android:layout_toRightOf="@id/reset_game"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="#fff"
+        android:textStyle="italic"/>
+
+
+</RelativeLayout>
